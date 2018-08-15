@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
         //full width
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          new MyCard(icon: Icons.account_balance,text: "Bank BNI",color: Colors.black87),
+          new MyCard(icon: Icons.account_balance,text: "Bank BJB",color: Colors.black87),
            new MyCard(icon: Icons.airplanemode_inactive,text: "Pesawat Tempur",color: Colors.blueAccent),
             new MyCard(icon: Icons.audiotrack,text: "MTV Mania",color: Colors.yellow),
              new MyCard(icon: Icons.fiber_new,text: "Indonesia",color: Colors.green),
