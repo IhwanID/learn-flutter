@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:time_tracker/ui/social_sign_in_button.dart';
 import 'package:time_tracker/widget/sign_in_button.dart';
 
 class SignInPage extends StatelessWidget {
@@ -30,14 +31,16 @@ class SignInPage extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 48),
-          SignInButton(
+          SocialSignInButton(
+            imagePath: 'images/google-logo.png',
             text: 'Sign in with Google',
             color: Colors.white,
             textColor: Colors.black87,
             onPressed: () {},
           ),
           SizedBox(height: 8),
-          SignInButton(
+          SocialSignInButton(
+            imagePath: 'images/facebook-logo.png',
             text: 'Sign in with Facebook',
             color: Color(0xFF334D92),
             textColor: Colors.white,
@@ -45,9 +48,8 @@ class SignInPage extends StatelessWidget {
           ),
           SizedBox(height: 8),
           SignInButton(
-            text: 'Sign in with Email',
+            child: Text('Sign in with Email', style: TextStyle(color: Colors.white, fontSize: 15.0)),
             color: Colors.teal[700],
-            textColor: Colors.white,
             onPressed: () {},
           ),
           SizedBox(height: 8),
@@ -58,9 +60,8 @@ class SignInPage extends StatelessWidget {
           ),
           SizedBox(height: 8),
           SignInButton(
-            text: 'Go anonymous',
+            child: Text('Go anonymous', style: TextStyle(color: Colors.black87, fontSize: 15.0),),
             color: Colors.lime[300],
-            textColor: Colors.black87,
             onPressed: () {},
           )
         ],

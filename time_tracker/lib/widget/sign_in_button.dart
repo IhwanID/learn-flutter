@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class SignInButton extends StatelessWidget {
-
-  SignInButton({this.text, this.color,this.textColor, this.onPressed, this.height: 50.0});
-  final String text;
+  SignInButton(
+      {this.color,
+      this.onPressed,
+      this.height: 50.0,
+      this.child});
   final Color color;
-  final Color textColor;
   final VoidCallback onPressed;
   final double height;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
@@ -16,13 +18,9 @@ class SignInButton extends StatelessWidget {
       child: RaisedButton(
         color: color,
         onPressed: onPressed,
-        child: Text(
-          text,
-          style: TextStyle(color: textColor, fontSize: 15.0),
-        ),
+        child: child,
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(8.0))
-        ),
+            borderRadius: BorderRadius.all(Radius.circular(8.0))),
       ),
     );
   }
